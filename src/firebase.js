@@ -2,16 +2,17 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "",
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "",
+  apiKey: "AIzaSyAEu1pAJBdO4iF98bxK9OEGu0JsWoUxrAM",
+  authDomain: "tourist-safety-dfbe1.firebaseapp.com",
+  projectId: "tourist-safety-dfbe1",
+  storageBucket: "tourist-safety-dfbe1.firebasestorage.app",
+  messagingSenderId: "749826859078",
+  appId: "1:749826859078:web:db17689d06b3306c83aa47",
+  measurementId: "G-JMH91GWFNP"
 };
-
 export const firebaseConfigIssue =
   !firebaseConfig.apiKey ||
   !firebaseConfig.authDomain ||
